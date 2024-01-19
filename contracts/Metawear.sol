@@ -95,8 +95,12 @@ contract Metawear is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         }
     }
 
-    function setRemnant(uint256 _remnant) public isAdmin {
+    function setRemnant(uint256 _remnant) public onlyOwner {
         remnant = _remnant;
+    }
+
+    function setPercentFloor(uint256 _percentFloor) public onlyOwner {
+        percentFloor = _percentFloor;
     }
 
     function withdraw(
