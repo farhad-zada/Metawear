@@ -21,6 +21,8 @@ interface IMetawear {
 
     function setRemnant(uint256 _remnant) external;
 
+    function setPercentFloor(uint256 _percentFloor) external;
+
     function withdraw(
         address token,
         address payable to,
