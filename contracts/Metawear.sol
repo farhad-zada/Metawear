@@ -30,7 +30,7 @@ contract Metawear is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         transferFeePercent = 0;
         remnant = 10 ** 18; // 1.0
         percentFloor = 10 ** 18;
-        _mint(msg.sender, 1_000_000_000 * 10 ** 18);
+        _mint(msg.sender, 5_000_000_000 * 10 ** 18);
     }
 
     function _beforeTokenTransfer(
